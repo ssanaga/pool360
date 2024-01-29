@@ -32,16 +32,18 @@ const NavBar = () => {
 
   const logoutWithRedirect = () =>
     logout({
-        logoutParams: {
-          returnTo: window.location.origin,
-        }
+      logoutParams: {
+        returnTo: window.location.origin,
+      }
     });
 
   return (
     <div className="nav-container">
       <Navbar color="light" light expand="md" container={false}>
         <Container>
-          <NavbarBrand className="logo" />
+          <NavbarBrand >
+            {<img src="https://devpoolcorpb2cstorage.blob.core.windows.net/poolcorpid/assets/images/pool360Icon.svg" style={{ width: '120px', height: '50px' }} />}
+          </NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
@@ -55,7 +57,7 @@ const NavBar = () => {
                   Home
                 </NavLink>
               </NavItem>
-              {isAuthenticated && (
+              {/* {isAuthenticated && (
                 <NavItem>
                   <NavLink
                     tag={RouterNavLink}
@@ -66,6 +68,23 @@ const NavBar = () => {
                     External API
                   </NavLink>
                 </NavItem>
+
+
+              )} */}
+
+              {isAuthenticated && (
+                <NavItem>
+                  <NavLink
+                    tag={RouterNavLink}
+                    to="/creditApplication"
+                    exact
+                    activeClassName="router-link-exact-active"
+                  >
+                    Credit Application
+                  </NavLink>
+                </NavItem>
+
+
               )}
             </Nav>
             <Nav className="d-none d-md-block" navbar>
@@ -167,7 +186,7 @@ const NavBar = () => {
           </Collapse>
         </Container>
       </Navbar>
-    </div>
+    </div >
   );
 };
 

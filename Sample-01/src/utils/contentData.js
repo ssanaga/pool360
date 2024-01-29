@@ -1,27 +1,27 @@
 const contentData = [
   {
-    title: "Configure other identity providers",
-    link: "https://auth0.com/docs/connections",
+    title: "NPT Pool",
+    link: "https://www.nptpool.com/",
     description:
-      "Auth0 supports social providers as Facebook, Twitter, Instagram and 100+, Enterprise providers as Microsoft Office 365, Google Apps, Azure, and more. You can also use any OAuth2 Authorization Server."
+      "The products you need to build the backyard of your dreams.Customize every inch of your backyard with NPT's outdoor living products"
   },
   {
-    title: "Enable Multifactor Authentication",
+    title: "Water test",
     link: "https://auth0.com/docs/multifactor-authentication",
     description:
-      "Add an extra layer of security by enabling Multi-factor Authentication, requiring your users to provide more than one piece of identifying information. Push notifications, authenticator apps, SMS, and DUO Security are supported."
+      "The WaterTest Software Solution Built for Your Business and Customers. Ready to take your pool retail experience to the next level? POOL360 WaterTest is the solution as the only water analysis software that works with the most complete lines of pool & spa chemicals in Regal®, E-Z Clor® and Life®."
   },
   {
-    title: "Anomaly Detection",
-    link: "https://auth0.com/docs/anomaly-detection",
+    title: "Superior Pool Products",
+    link: "https://scppool.com",
     description:
-      "Auth0 can detect anomalies and stop malicious attempts to access your application. Anomaly detection can alert you and your users of suspicious activity, as well as block further login attempts."
+      "SCP Distributors LLC | Superior Pool Products LLC are part of a distribution network that leads the pack as the world's largest wholesale distributor of swimming pool supplies, equipment and related leisure products."
   },
   {
-    title: "Learn About Rules",
-    link: "https://auth0.com/docs/rules",
+    title: "Horizon",
+    link: "https://www.horizononline.com/",
     description:
-      "Rules are JavaScript functions that execute when a user authenticates to your application. They run once the authentication process is complete, and you can use them to customize and extend Auth0's capabilities."
+      "The one stop shop for green industry professionals"
   }
 ];
 
