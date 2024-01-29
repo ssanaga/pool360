@@ -115,7 +115,7 @@ const InviteToCompany = () => {
                 <strong>Role:</strong> {userDetails.userRole}
             </div>
             <div>
-                You can start shopping at our eCommerce Site <a href="http://localhost:5000/profile" target="_blank" rel="noopener noreferrer">Visit our Shop</a>
+                You can start shopping at our eCommerce Site <a href="https://ecommerce.vercel.app/login" target="_blank" rel="noopener noreferrer">Visit our Shop</a>
             </div>
 
             {userDetails.userRole.includes('organization_admin') && (
