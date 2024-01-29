@@ -24,6 +24,8 @@ const providerConfig = {
   authorizationParams: {
     redirect_uri: window.location.origin,
     ...(config.audience ? { audience: config.audience } : null),
+    ...(config.organization ? { organization: config.organization } : {}),
+    ...(config.connection ? { connection: config.connection } : {}),
   },
 };
 

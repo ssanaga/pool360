@@ -12,9 +12,14 @@ export function getConfig() {
       ? configJson.audience
       : null;
 
+  const organization = configJson.organization || null;
+
+  const connection = configJson.connection || null;
   return {
     domain: configJson.domain,
     clientId: configJson.clientId,
     ...(audience ? { audience } : null),
+    ...(organization ? { organization } : {}),
+    ...(connection ? { connection } : {})
   };
 }
