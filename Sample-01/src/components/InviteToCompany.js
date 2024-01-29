@@ -41,7 +41,7 @@ const InviteToCompany = () => {
                 }
 
                 // Fetch roles
-                const rolesResponse = await fetch(`https://${your_auth0_domain}/api/v2/users/${user.sub}/roles`, {
+                const rolesResponse = await fetch(`https://${your_auth0_domain}/api/v2/organizations/${orgData[0].id}/members/${user.sub}/roles`, {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }
