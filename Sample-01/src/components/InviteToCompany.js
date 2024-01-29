@@ -118,21 +118,25 @@ const InviteToCompany = () => {
                 You can start shopping at our eCommerce Site <a href="http://localhost:5000/profile" target="_blank" rel="noopener noreferrer">Visit our Shop</a>
             </div>
 
-            {<form onSubmit={handleInvite} className="user-form">
-                <label>
-                    Email:
-                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="form-input" />
-                </label>
-                <br />
-                {/* <label>
+            {userDetails.userRole.includes('organization_admin') && (
+                <form onSubmit={handleInvite} className="user-form">
+                    <label>
+                        Email:
+                        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="form-input" />
+                    </label>
+                    <br />
+                    {/* Uncomment and use the Role ID field if needed */}
+                    {/* <label>
                     Role ID:
                     <input type="text" value={role} onChange={(e) => setRole(e.target.value)} className="form-input" />
                 </label>
                 <br /> */}
-                <button type="submit" className="form-button">Send Invitation</button>
-            </form>}
+                    <button type="submit" className="form-button">Send Invitation</button>
+                </form>
+            )}
         </div>
     );
+
 };
 
 export default InviteToCompany;
