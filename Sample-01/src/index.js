@@ -26,6 +26,7 @@ const providerConfig = {
     ...(config.audience ? { audience: config.audience } : null),
     ...(config.organization ? { organization: config.organization } : {}),
     ...(config.connection ? { connection: config.connection } : {}),
+    ...(config.invitation ? { connection: config.invitation } : {}),
   },
 };
 

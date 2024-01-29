@@ -15,11 +15,13 @@ export function getConfig() {
   const organization = configJson.organization || null;
 
   const connection = configJson.connection || null;
+  const invitation = configJson.invitation || null;
   return {
     domain: configJson.domain,
     clientId: configJson.clientId,
     ...(audience ? { audience } : null),
     ...(organization ? { organization } : {}),
-    ...(connection ? { connection } : {})
+    ...(connection ? { connection } : {}),
+    ...(invitation ? { invitation } : {})
   };
 }
