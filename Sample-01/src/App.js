@@ -11,6 +11,7 @@ import ExternalApi from "./views/ExternalApi";
 import CreditApplication from "./views/CreditApplication";
 import { useAuth0 } from "@auth0/auth0-react";
 import history from "./utils/history";
+import Login from "./components/Login";
 
 // styles
 import "./App.css";
@@ -38,6 +39,7 @@ const App = () => {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/profile" component={Profile} />
+            <Route path="/login" component={Login} />
             <Route path="/external-api" component={ExternalApi} />
             <Route path="/creditApplication" component={CreditApplication} />
           </Switch>
