@@ -27,6 +27,7 @@ const providerConfig = {
     ...(config.organization ? { organization: config.organization } : {}),
     ...(config.connection ? { connection: config.connection } : {}),
     ...(config.invitation ? { connection: config.invitation } : {}),
+    ...(config.scope ? { scopes: config.scope } : {}),
   },
 };
 

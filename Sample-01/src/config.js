@@ -16,12 +16,14 @@ export function getConfig() {
 
   const connection = configJson.connection || null;
   const invitation = configJson.invitation || null;
+  const scope = configJson.scope || null;
   return {
     domain: configJson.domain,
     clientId: configJson.clientId,
     ...(audience ? { audience } : null),
     ...(organization ? { organization } : {}),
     ...(connection ? { connection } : {}),
-    ...(invitation ? { invitation } : {})
+    ...(invitation ? { invitation } : {}),
+    ...(scope ? { scope } : {})
   };
 }
